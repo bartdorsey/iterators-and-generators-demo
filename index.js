@@ -1,12 +1,3 @@
-/*
-Iterator Protocol
-Object must have a .next() property which when called returns an object like this:
-
-{
-  done: boolean
-  value: any    
-}
-*/
 import stringDemo from "./string.js";
 import arrayDemo from "./array.js";
 import nodelistDemo from "./nodelist.js";
@@ -15,37 +6,6 @@ import generatorDemo from './generator.js';
 import asyncIterableDemo from "./asyncIterable.js";
 import asyncGeneratorDemo from "./asyncGenerator.js";
 
-/*
-Iterable Protocol
-
-Object must have a property with the key of [Symbol.iterator] that is a function
-that returns an iterator object
-
-const myIterable = {
-  [Symbol.iterator] = function () {
-    return {
-      next: function () {
-        //
-      }
-    }
-  }
-}
-*/
-
-/* 
-Things in JavaScript that are iterable.
-
-String
-Array
-NodeList
-Map
-Set
-
-Things that aren't
-
-Object
-
-*/
 document.getElementById('string-demo-button').addEventListener('click', stringDemo);
 document.getElementById('array-demo-button').addEventListener('click', arrayDemo);
 document.getElementById('nodelist-demo-button').addEventListener('click', nodelistDemo);
