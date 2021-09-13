@@ -2,10 +2,12 @@ export default function customDemo() {
   console.group('Custom Iterable Demo');
   // We can make our own iterable objects
   // Although generators will make this easier
-  const counter = {
+    const counter = {
+    // iterator protocol
     [Symbol.iterator]: function () {
       let count = 0;
       return {
+        // iterable protocol
         next: function () {
           if (count >= 10) {
             return {

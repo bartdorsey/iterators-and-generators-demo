@@ -3,7 +3,7 @@ export default function generatorDemo() {
   // This is how we define a generator.
   // It returns a generator object, which is 
   // both an interable and an iterator
-  function *counter() {
+  function* counter() {
     let count = 0;
     while (count < 10) {
       // yield means to advance the iterator,
